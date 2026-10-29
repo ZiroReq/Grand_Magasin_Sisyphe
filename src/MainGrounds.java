@@ -1,7 +1,14 @@
 public class MainGrounds {
     static void main(){
-    int day = 1;
-    Season trending = Season.Le_Noir;
+    int day = 23;
+    Season trending;
+
+    if(day % 2 == 0){
+        trending = Season.Le_Noir;
+    } else{
+        trending = Season.Le_Rouge;
+    }
+
     System.out.println("===========Grand Magasin Sisyphe===========");
     System.out.println("Day: " + day);
     System.out.println("Current season: " + trending);
